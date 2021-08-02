@@ -38,4 +38,8 @@ elif [[ $selection == "Y" ]]; then
     setup
 elif [[ $selection == "N" ]]; then
     clear && exit 1
+<<<<<<< HEAD
 fi
+=======
+fi
+>>>>>>> 7d16ceec0063f2f3116c8a49887a5e5f83976dd0
