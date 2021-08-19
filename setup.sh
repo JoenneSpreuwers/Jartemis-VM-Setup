@@ -18,6 +18,10 @@ setup () {
     mkdir /root/.ssh
     echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEmDX3ZRpSY9lio6cwWsqYUw7mU0oflODC+DooluAYxBSA4QY44IMCRsXLr95kcQQTsvCKuhH7aXA39vc1y9nkOovRgd6a8Mw9/u+VDkF+ggLdyPvPx+Z+BS7HlkuxhgwLbWGRyoqgnhzvDy9t+AsvKjlGlEEF3xTXz+9RcAV0bS3k5httNDGKAX6VyfbFyvGv/O2pem3luHaRoJFNrjSHmYHJ+VWvFoDXz4RLeFvctkmJ9UdLlYs/KB9hSgL1sYNVs3qhvJrXkUjZkIDZ1zhFyMKA0qhVtAkQzBSAA+O9mriVPvcSPRc9lfCUftkVm1qb8rOK2K6qTF0v/+1hnjGN root@jartemis-pfsense.local" > /root/.ssh/authorized_keys
 
+    sudo systemctl stop firewalld
+    sudo systemctl disable firewalld
+    sudo systemctl mask --now firewalld
+
     exit
 }
 
