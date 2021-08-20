@@ -9,7 +9,6 @@ setup () {
     unzip master.zip
     cd lolcat-master/bin
     gem install lolcat
-    echo "Test if lolcat works" | lolcat
 
     wget https://raw.githubusercontent.com/JoenneSpreuwers/Jartemis-VM-Setup/main/mymotd.sh && wget https://raw.githubusercontent.com/JoenneSpreuwers/Jartemis-VM-Setup/main/.bashrc
     sudo mv mymotd.sh /etc/profile.d/mymotd.sh
