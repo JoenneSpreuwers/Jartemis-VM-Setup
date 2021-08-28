@@ -15,6 +15,8 @@ setup () {
     sudo mv mymotd.sh /etc/profile.d/mymotd.sh
     sudo mv .bashrc /root/.bashrc
 
+    sudo curl -s https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch 8 -o /usr/bin/neofetch && neofetch --disable title
+
     mkdir /root/.ssh
     echo "" > /root/.ssh/authorized_keys
 
