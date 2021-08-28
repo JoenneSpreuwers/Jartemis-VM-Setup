@@ -3,7 +3,7 @@
 setup () {
     yum -y install epel-release
     yum -y update && yum -y upgrade
-    yum -y install ruby wget unzip nano neofetch git
+    yum -y install ruby wget unzip nano neofetch git qemu-guest-agent nc
 
     wget https://github.com/busyloop/lolcat/archive/master.zip
     unzip master.zip
@@ -20,7 +20,9 @@ setup () {
     sudo systemctl stop firewalld
     sudo systemctl disable firewalld
     sudo systemctl mask --now firewalld
-
+    
+    sudo systemctl enable qemu-guest-agent
+    sudo systemctl start qemu-guest-agent
     exit
 }
 
@@ -28,7 +30,7 @@ read -p "---------------------------------------------
 Welcome to the setup script for Jartemis VM's
 ---------------------------------------------
 This script will install lolcat to output gay
-terminals
+terminals (and other stuff)
 ---------------------------------------------
 Do you want to continue?
 Y(es) / N(o)
