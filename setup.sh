@@ -4,6 +4,7 @@ setup () {
     yum -y install epel-release
     yum -y update && yum -y upgrade
     yum -y install ruby wget unzip nano neofetch git qemu-guest-agent nc
+    yum -y groupinstall "Development Tools"
 
     wget https://github.com/busyloop/lolcat/archive/master.zip
     unzip master.zip
