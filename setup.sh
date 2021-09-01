@@ -18,7 +18,7 @@ setup () {
     sudo curl -s https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch 8 -o /usr/bin/neofetch && neofetch --disable title
 
     mkdir /root/.ssh
-    echo "" > /root/.ssh/authorized_keys
+    echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSHQQf8jzUr+2XhqyKCziPsxITrv4V99yV+vOZ0BOBbvQQ8rDFP2HWGZosPQnbM2BT4kMWyUI5CnPFsoiaUhHsZQRfEOeLBMp/mgCoioc0wBP6gs4luGPhL6CJhI3ifqBnL2AYCuxDTTO2D4zqKWHeQu5Z+uuM16H5oKLbHeYiyTmzBmRbYjYJVZUz3SnMACwJxcRdoNFaMFoCZM1U1ga47HbI2gN8EYBJMYEcyB0xru3s09k2rtHb/b8BNZkdKKq2skQSEw4d7NtPvtot4aMH4jS9Z/Z0ZgJx4I99PILPruzDISpOG8YqcAJaZFl0uMcHBTTuoMvcs0bhqhpOmA9f root@jrtms-node0-shield.jartemis.net" > /root/.ssh/authorized_keys
 
     sudo systemctl stop firewalld
     sudo systemctl disable firewalld
