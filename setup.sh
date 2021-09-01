@@ -26,6 +26,8 @@ setup () {
     
     sudo systemctl enable qemu-guest-agent
     sudo systemctl start qemu-guest-agent
+    
+    sudo rm -r master.zip lolcat-master/
     exit
 }
 
